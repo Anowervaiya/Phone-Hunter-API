@@ -19,51 +19,76 @@
 </head>
 
 <body>
-  <header class="min-h-[506px] bg-[#0D6EFD0D]">
-    <!-- navigation -->
-    <div class="navbar">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+  <header class="min-h-[800px]">
+
+    <div class="min-h-[506px] bg-[#0D6EFD0D]">
+      <!-- navigation -->
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+
           </div>
-
+          <a class="btn btn-ghost text-xl">Hot Gadget</a>
         </div>
-        <a class="btn btn-ghost text-xl">Hot Gadget</a>
-      </div>
 
-      <div class="navbar-end">
-        <a class="btn btn-primary">Sign Up</a>
-      </div>
-    </div>
-    <!-- hero section  -->
-    <div class="hero ">
-      <div class="hero-content text-center">
-        <div class="max-w-md">
-          <h1 class="text-5xl font-bold">Hello there</h1>
-          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-            quasi.
-            In deleniti eaque aut repudiandae et a id nisi.</p>
-          <button class="btn btn-primary">Buy Now</button>
+        <div class="navbar-end">
+          <a class="btn btn-primary">Sign Up</a>
         </div>
       </div>
-    
+      <!-- hero section  -->
+      <div class="hero ">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold">Hello there</h1>
+            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi.
+              In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+
+      </div>
     </div>
+    <div class="relative">
+      <div class="absolute flex justify-center -top-44 w-full">
+
+        <img src="images/Group 48095420.png" alt="" class=" max-w-[600px] ">
+      </div>
+    </div>
+
+
   </header>
-  <main class="relative">
- <div class="absolute flex justify-center -top-44 w-full">
+  <main class=" container mx-auto">
 
-   <img src="images/Group 48095420.png" alt="" class=" max-w-[600px] ">
- </div>
-  
+    <!-- search input  -->
+    <div>
+      <h1 class="text-center font-bold text-3xl mb-8">Search Your Phone</h1>
+      <div class="text-center">
+        <input id="inputId" type="text" placeholder="Search here"
+          class="input input-bordered input-accent w-full max-w-xs" value="iphone" />
+        <button class="btn btn-primary" onclick="searchPhones()">Search </button>
+      </div>
+    </div>
+    <!-- loading spinner  -->
+  <div class="text-center my-10">
+      <span id="loading-spinner" class="loading loading-spinner loading-lg hidden"></span>
+  </div>
 
+    <div id="phones-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4 my-36">
+
+    </div>
   </main>
   <footer>
 
   </footer>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
